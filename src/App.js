@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './css/pure-min.css';
 import './css/side-menu.css';
-import 'primereact/resources/primereact.min.css';
-import 'primereact/resources/themes/omega/theme.css';
-import 'font-awesome/css/font-awesome.css';
-import { InputText } from 'primereact/components/inputtext/InputText';
-import { TableComponent } from "./components/TableComponent";
+import {TableComponent} from "./components/TableComponent";
+import { Button } from 'primereact/components/button/Button';
 
 
 class App extends Component {
@@ -20,7 +17,7 @@ class App extends Component {
 
         <div id="menu">
           <div className="pure-menu">
-            <a className="pure-menu-heading" href="#">Company</a>
+            <a className="pure-menu-heading" href="#">Ciço Livraria</a>
 
             <ul className="pure-menu-list">
               <li className="pure-menu-item"><a href="#" className="pure-menu-link">Home</a></li>
@@ -31,57 +28,18 @@ class App extends Component {
         </div>
 
         <div id="main">
+
           <div className="header">
             <h1>Cadastro de Autores</h1>
           </div>
-          <div className="content" id="content">
 
-            <TableComponent/>
-
-            <div className="pure-form pure-form-aligned">
-              <form className="pure-form pure-form-aligned">
-
-                <span className="ui-float-label">
-                  <InputText id="float-input" type="text" size="30" />
-                  <label htmlFor="float-input">Nome</label>
-                </span>
-
-                <div className="pure-control-group">
-                  <label htmlFor="nome">Nome</label>
-                  <input id="nome" type="text" name="nome" value="" />
-                </div>
-                <div className="pure-control-group">
-                  <label htmlFor="email">Email</label>
-                  <input id="email" type="email" name="email" value="" />
-                </div>
-                <div className="pure-control-group">
-                  <label htmlFor="senha">Senha</label>
-                  <input id="senha" type="password" name="senha" />
-                </div>
-                <div className="pure-control-group">
-                  <label></label>
-                  <button type="submit" className="pure-button pure-button-primary">Gravar</button>
-                </div>
-              </form>
-
-            </div>
-            <div>
-              <table className="pure-table">
-                <thead>
-                  <tr>
-                    <th>Nome</th>
-                    <th>email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Cássio Paixão</td>
-                    <td>cassiopaixaoti@gmail.com</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div className="content">
+            <div className="content-subhead">
+              <Button label="Adicionar" icon="fa-plus" iconPos="right" style={{ marginBottom: 10}} />
+              <TableComponent />
             </div>
           </div>
+
         </div>
       </div>
     );

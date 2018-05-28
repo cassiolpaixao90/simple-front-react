@@ -6,12 +6,13 @@
     "react-scripts": "0.3.1"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.5",
+    "font-awesome": "^4.7.0",
     "primereact": "^1.5.3",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-transition-group": "^2.2.1",
-    "font-awesome": "^4.7.0",
-    "classnames": "^2.2.5"
+    "react-transition-group": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
