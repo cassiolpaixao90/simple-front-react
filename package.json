@@ -1,0 +1,25 @@
+{
+  "name": "cdc-admin",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.3.1"
+  },
+  "dependencies": {
+    "primereact": "^1.5.3",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-transition-group": "^2.2.1",
+    "font-awesome": "^4.7.0",
+    "classnames": "^2.2.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
+}
