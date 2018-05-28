@@ -5,6 +5,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/omega/theme.css';
 import 'font-awesome/css/font-awesome.css';
 import { InputText } from 'primereact/components/inputtext/InputText';
+import { TableComponent } from "./components/TableComponent";
 
 
 class App extends Component {
@@ -34,6 +35,9 @@ class App extends Component {
             <h1>Cadastro de Autores</h1>
           </div>
           <div className="content" id="content">
+
+            <TableComponent/>
+
             <div className="pure-form pure-form-aligned">
               <form className="pure-form pure-form-aligned">
 
