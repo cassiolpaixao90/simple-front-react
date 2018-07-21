@@ -7,8 +7,4 @@ export class AuthoresService {
             .then(res =>  res.data.books);
     }
 
-    getAddAuthores() {
-
-    }
-
 }

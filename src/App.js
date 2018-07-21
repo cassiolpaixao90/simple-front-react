@@ -3,19 +3,28 @@ import './css/pure-min.css';
 import './css/side-menu.css';
 import {TableComponent} from "./components/TableComponent";
 import { Button } from 'primereact/components/button/Button';
+import NavBarComponent from './components/common/NavBarComponent'
+import SideNavComponent from './components/common/SideNavComponent'
+import MainComponent from './components/common/MainComponent'
 
 
 class App extends Component {
   render() {
     return (
-      <div id="layout">
+      <div className="outer-wrap">
+        <NavBarComponent />
+        <div className="content"> 
+            <SideNavComponent />
+            <MainComponent />
+        </div>
+       
 
-        <a href="#menu" id="menuLink" className="menu-link">
+        {/* <a href="#menu" id="menuLink" className="menu-link">
 
           <span></span>
-        </a>
+        </a> */}
 
-        <div id="menu">
+        {/* <div id="menu">
           <div className="pure-menu">
             <a className="pure-menu-heading" href="#">Ciço Livraria</a>
 
@@ -25,25 +34,15 @@ class App extends Component {
               <li className="pure-menu-item"><a href="#" className="pure-menu-link">Livro</a></li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
-        <div id="main">
-
-          <div className="header">
-            <h1>Cadastro de Autores</h1>
-          </div>
-
-          <div className="content">
-            <div className="content-subhead">
-              <Button label="Adicionar" icon="fa-plus" iconPos="right" style={{ marginBottom: 10}} />
-              <TableComponent />
-            </div>
-          </div>
-
-        </div>
+    
       </div>
     );
   }
 }
 
 export default App;
+
+{/* <Button label="Adicionar" icon="fa-plus" iconPos="right" style={{ marginBottom: 10}} />
+<TableComponent /> */}
